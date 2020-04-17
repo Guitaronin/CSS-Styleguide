@@ -24,6 +24,7 @@
     - [Shorthand](#shorthand)
     - [Flexbox](#flexbox)
     - [Media Queries](#media-queries)
+    - [Vendor Prefixes](#vendor-prefixes)
 1. [Sass](#sass)
     - [Syntax](#syntax)
     - [Ordering](#ordering-of-property-declarations)
@@ -408,6 +409,15 @@ Flexbox is especially useful for creating dynamic layouts such as:
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { ... }
 ```
+
+### Vendor Prefixes
+
+- When writing CSS, it is not necessary to write all of the vendor prefix styles by hand. We can use tooling to automatically add these prefixes for us.
+- Below is a generated `browserslist` string to use that will cover the browsers we need to support based off our analytic data.  
+  - `last 4 versions, not IE < 11, not Edge < 18, not last 4 QQAndroid versions, not last 4 BB versions, not last 4 Opera versions, not last 4 OperaMini versions, not last 4 OperaMobile versions, not last 4 Android versions, not last 4 Baidu versions, not last 4 Kaios versions, not last 4 IE_mob versions`  
+  - [view browserslist](https://browserl.ist/?q=last+4+versions%2C+not+IE+%3C+11%2C+not+Edge+%3C+18%2C+not+last+4+QQAndroid+versions%2C+not+last+4+BB+versions%2C+not+last+4+Opera+versions%2C+not+last+4+OperaMini+versions%2C+not+last+4+OperaMobile+versions%2C+not+last+4+Android+versions%2C+not+last+4+Baidu+versions%2C+not+last+4+Kaios+versions%2C+not+last+4+IE_mob+versions)  
+  
+If using a build tool, this string can be incorporated into there. If you are just working with static files, you can use [CSS Autoprefixer Online](https://autoprefixer.github.io/) and paste in the `browserslist` string.
 
 
 **[⬆ back to top](#table-of-contents)**
