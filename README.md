@@ -14,6 +14,7 @@
 	- [Bootstrap](#bootstrap)
 1. [CSS](#css)
     - [Formatting](#formatting)
+    - [Formatting Template](#formatting-template)
     - [Comments](#comments)
     - [OOCSS and BEM](#oocss-and-bem)
     - [ID Selectors](#id-selectors)
@@ -145,6 +146,68 @@ We utilize the Bootstrap framework on SOT pages.
 .selector,
 .per-line {
   // ...
+}
+```
+
+### Formatting Template
+
+* When working within the SOT team, pages often change contexts or pieces of pages are mixed together to create new pages. Because of this, we need to remain flexible and make sure that the code is properly organized for easy copying/removal. Below is a starter template that can be used to organize your stylesheets. It is best to have separate media queries at the end of each section instead of a bunch of giant media queries. This significantly reduces the amount of time needed to locate all of the styles related to a specific part of the page.
+
+```css
+/* ************************************************** !!
+/* CSS CONTENTS ----------------------------------------
+--------------------------------------------------------
+--| Top Level
+------| Sub Level
+-----------| Sub-Sub Level
+--------------------------------------------------------
+----------------------------------------------------- */
+
+/* ************************************************************
+***************************************************************
+--- Top Level ---
+***************************************************************
+************************************************************ */
+
+.example {
+  ...
+}
+
+@media (max-width: 767px) {
+  ...
+}
+
+/* -----------------------------------------------------------
+--- Sub Level ---
+------------------------------------------------------------ */
+
+.example {
+  ...
+}
+
+@media (max-width: 767px) {
+  ...
+}
+
+/* _________________________________________ */
+/* --- Sub-Sub Level --- */
+
+.example {
+  ...
+}
+
+@media (max-width: 767px) {
+  ...
+}
+
+/* -- Any additional sub,sub,sub.... levels -- */
+
+.example {
+  ...
+}
+
+@media (max-width: 767px) {
+  ...
 }
 ```
 
