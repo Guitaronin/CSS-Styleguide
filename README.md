@@ -115,10 +115,11 @@ We utilize the Bootstrap framework on SOT pages.
   - Underscores are okay if you are using BEM (see [OOCSS and BEM](#oocss-and-bem) below).
 * Do not use ID selectors.
 * When using multiple selectors in a rule declaration, give each selector its own line.
-* Put a space before the opening brace `{` in rule declarations.
 * In properties, put a space after, but not before, the `:` character.
 * Put closing braces `}` of rule declarations on a new line.
-* Put blank lines between rule declarations.
+* Put blank lines between rule declarations outside of Media Queries.
+* Don't put blank lines between rule declarations inside of Media Queries.
+  - The reason for this is that it provides a visual cue that the CSS you are viewing is inside of a media query.
 
 **Bad**
 
@@ -131,6 +132,16 @@ We utilize the Bootstrap framework on SOT pages.
 }
 #lol-no {
   // ...
+}
+
+@media (max-width: 767px) {
+  .avatar {
+    // ...
+  }
+  
+  .container {
+    // ...
+  }
 }
 ```
 
@@ -146,6 +157,15 @@ We utilize the Bootstrap framework on SOT pages.
 .selector,
 .per-line {
   // ...
+}
+
+@media (max-width: 767px) {
+  .avatar {
+    // ...
+  }
+  .container {
+    // ...
+  }
 }
 ```
 
