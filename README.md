@@ -409,8 +409,11 @@ Avoid binding to the same class in both your CSS and JavaScript. Conflating the 
 We recommend creating JavaScript-specific classes to bind to, prefixed with `.js-`:
 
 ```html
-<button class="btn btn-primary js-request-to-book">Request to Book</button>
+<button class="js-request-to-book btn btn-primary">Request to Book</button>
 ```
+
+- Avoid using the `.js-` prefixed class name in the middle of the class list.
+  - At the beginning or the end of the class list are acceptable locations, although the beginning is preferred since it sets the tone up front that this element is targeted by JavaScript somehow.
 
 ### Border
 
