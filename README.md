@@ -1,6 +1,11 @@
 
 # SOT CSS / Sass Styleguide
 
+## Teams
+- [SOT Contents](#table-of-contents)
+- [Freshness Contents](#freshness-table-of-contents)
+  - [Freshness special notes](#freshness-special-notes)
+
 *forked from [airbnb/css](https://github.com/airbnb/css)*
 *A mostly reasonable approach to CSS and Sass*
 
@@ -138,7 +143,7 @@ We utilize the Bootstrap framework on SOT pages.
   .avatar {
     // ...
   }
-  
+
   .container {
     // ...
   }
@@ -282,11 +287,11 @@ We encourage some combination of OOCSS and BEM for these reasons:
     color: #333;
   }
 
-  /* 
+  /*
   HTML:
   <div class"sidebar-card recent-posts">
     <button class="btn btn-primary"></button>
-  </div> 
+  </div>
   */
   ```
 
@@ -502,7 +507,7 @@ Flexbox is especially useful for creating dynamic layouts such as:
 - Below is a generated `browserslist` string to use that will cover the browsers we need to support based off our analytic data.  
   - `last 4 versions, not IE < 11, not Edge < 18, not last 4 QQAndroid versions, not last 4 BB versions, not last 4 Opera versions, not last 4 OperaMini versions, not last 4 OperaMobile versions, not last 4 Android versions, not last 4 Baidu versions, not last 4 Kaios versions, not last 4 IE_mob versions`  
   - [view browserslist](https://browserl.ist/?q=last+4+versions%2C+not+IE+%3C+11%2C+not+Edge+%3C+18%2C+not+last+4+QQAndroid+versions%2C+not+last+4+BB+versions%2C+not+last+4+Opera+versions%2C+not+last+4+OperaMini+versions%2C+not+last+4+OperaMobile+versions%2C+not+last+4+Android+versions%2C+not+last+4+Baidu+versions%2C+not+last+4+Kaios+versions%2C+not+last+4+IE_mob+versions)  
-  
+
 If using a build tool, this string can be incorporated into there. If you are just working with static files, you can use [CSS Autoprefixer Online](https://autoprefixer.github.io/) and paste in the `browserslist` string.
 
 
@@ -606,5 +611,38 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+## Freshness Table of Contents
+
+1. [Terminology](#terminology)
+    - [Rule Declaration](#rule-declaration)
+    - [Selectors](#selectors)
+    - [Properties](#properties)
+1. [CSS](#css)
+    - [Formatting](#formatting)
+    - [Comments](#comments)
+    - [OOCSS and BEM](#oocss-and-bem)
+    - [ID Selectors](#id-selectors)
+    - [Nested Selectors](#nested-selectors)
+    - [Qualified Selectors](#qualified-selectors)
+    - [JavaScript hooks](#javascript-hooks)
+    - [Border](#border)
+    - [Shorthand](#shorthand)
+    - [Flexbox](#flexbox)
+    - [Media Queries](#media-queries)
+    - [Vendor Prefixes](#vendor-prefixes)
+1. [Sass](#sass)
+    - [Syntax](#syntax)
+    - [Ordering](#ordering-of-property-declarations)
+    - [Variables](#variables)
+    - [Mixins](#mixins)
+    - [Extend directive](#extend-directive)
+    - [Nested selectors](#nested-selectors)
+1. [License](#license)
+
+### Freshness Special Notes
+
+Do not use bootstrap.
 
 **[⬆ back to top](#table-of-contents)**
